@@ -7,7 +7,7 @@ RUN pecl install apcu
 
 RUN apt-get update && \
 apt-get install -y \
-zlib1g-dev autoconf pkg-config libssl-dev libzip-dev
+zlib1g-dev autoconf pkg-config libssl-dev libzip-dev nano
 
 RUN docker-php-ext-install zip bcmath mysqli pdo pdo_mysql
 
