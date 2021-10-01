@@ -17,7 +17,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && mv composer /usr/local/bin/composer
 
 RUN pecl install xdebug; \
-    docker-php-ext-enable xdebug;
+    docker-php-ext-enable xdebug; \
+
 
 WORKDIR /usr/src/app
 
